@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>菜单栏</title>
+	<style>
+	.left ul li{
+		list-style:none;
+		cursor:pointer;
+		color:#D48B55;
+		font-size:16px;
+		padding:10px 10px 10px 40px;
+		margin-left:-40px;
+		width:102px;		
+	}
+	.left ul li:hover{
+		background:#669933;
+		color:#fff;
+	}
+	</style>
+</head>
+<body>
+	<div class="left">
+		<ul class="leful">
+		</ul>
+	</div>
+	<script type="text/javascript">
+	/*$(function(){
+		loadleft();
+		$(document).on("click",".leftli",function(){
+			var categoryId=$(this).attr("id"); 
+			$.ajax({
+			 	url : 'queryByCategoryId',
+    			type : 'get',
+    			contentType : 'text/html',
+    			data:{categoryId:categoryId}
+			}).done(function(data){
+		 	}).fail(function(data) {
+  			}).always(function() {
+    			console.log("complete");
+    			location.href="query.jsp";
+  			});
+  		});
+  	});
+  function loadleft(){
+  	$.ajax({
+    	url : 'queryAllCategory',
+    	type : 'get',
+    	contentType : 'text/html'
+  	}).done(function(data) {
+  		var json=eval("("+data+")");//将json字符串转化成json对象
+		for(var i=0;i<json.length;i++){
+			$(".leful").append("<li class='leftli' id='" + json[i].category_id + "'>" + json[i].category_name + "</li>");
+		}
+  	}).fail(function(data) {
+  	}).always(function() {
+    	console.log("complete");
+  	});
+  }*/
+	</script>
+</body>
+</html>

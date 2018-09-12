@@ -1,0 +1,13 @@
+header{
+    width: 100%;
+    height: 50px;
+    background: #323232;
+}
+footer{
+    width: 100%;
+    height:20px;   /* footer的高度一定要是固定值*/ 
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background: #333;
+}
