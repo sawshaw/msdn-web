@@ -5,18 +5,24 @@
 	<title>footer</title>
 	<style type="text/css">
 #footContent{
-	padding-top: 1rem;
-	padding-left: 40%;
+	margin:0;
+	padding:0rem;
+	text-align: center;
+	line-height: 30px;
+}
+a{
+	color:black;
 }
 </style>
 </head>
 <body>
 	<div id="footer">
 			<div id="footContent">
-				Copyright©2008-<script type="text/javascript">
-        	document.write(new Date().getFullYear());
-        </script>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var fullYear=new Date().getFullYear();
+			document.getElementById('footContent').innerHTML="Copyright©2008-"+fullYear+" Designed by "+"<a  href='http://www.sawshaw.com'><b>sawshaw</b></a>";
+		</script>
 </body>
 </html>
